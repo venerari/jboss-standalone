@@ -29,6 +29,3 @@ Run the playbook using:
 The HelloWorld application will be available at `http://<jboss server>:<http_port>/helloworld`
 
 The Ticket Monster application will be available at `http://<jboss server>:<http_port>/ticket-monster`
-#Jboss-Standalone
-#test
-# jboss-standalone
