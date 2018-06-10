@@ -1,0 +1,6 @@
+# Here are variables related to the standalone JBoss installation
+http_port: 8081
+https_port: 8943
+apps_folder: apps
+jboss_folder: jboss
+test1_folder: test1
