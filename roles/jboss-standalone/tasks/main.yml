@@ -14,10 +14,15 @@
     path: /{{ apps_folder }}/{{ jboss_folder }}/{{ test1_folder }}
     state: directory
   
-- name: Download JBoss from jboss.org
-  get_url: 
-    url: http://download.jboss.org/jbossas/7.1/jboss-as-7.1.1.Final/jboss-as-7.1.1.Final.zip 
-    dest: /{{ apps_folder }}/{{ jboss_folder }}/jboss-as-7.1.1.Final.zip
+#- name: Download JBoss from jboss.org
+#  get_url: 
+#    url: http://download.jboss.org/jbossas/7.1/jboss-as-7.1.1.Final/jboss-as-7.1.1.Final.zip 
+#    dest: /{{ apps_folder }}/{{ jboss_folder }}/jboss-as-7.1.1.Final.zip
+
+- name: copy jboss
+  copy:
+    src: jboss-as-7.1.1.Final.zip
+    dest: /{{ apps_folder }}/{{ jboss_folder }}/jboss-as-7.1.1.Final.zip  
 
 - name: Extract archive
   unarchive: 
